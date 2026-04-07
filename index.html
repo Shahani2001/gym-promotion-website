@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Sport Center - Join Today!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Fitness Gym Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="dark-toggle" class="dark-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Launch Your Fitness Journey</h1>
+                    <p class="hero-subtitle">Join our new state-of-the-art gym. Modern equipment, expert trainers, flexible plans.</p>
+                    
+                    <!-- Promo Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="500">0</span>
+                            <span class="stat-label">+ Members</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="24">0</span>
+                            <span class="stat-label">/7 Access</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="14">0</span>
+                            <span class="stat-label">Day Trial</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-ctas">
+                        <a href="#contact" class="cta-btn primary">Get Started Today</a>
+                        <a href="#services" class="cta-btn secondary">View Plans</a>
+                    </div>
+                    
+                    <!-- Testimonial -->
+                    <blockquote class="hero-testimonial">
+                        <p>"Transformed my fitness in weeks! Best gym around."</p>
+                        <cite>- Happy Member</cite>
+                    </blockquote>
+                </div>
+                <div class="hero-image-container">
+                    <img src="interior.jpg" alt="Modern Gym Interior" class="hero-img">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Our Gym</h2>
+                <p>Our local fitness brand brings premium gym experience to the community. Spacious facilities, top-tier equipment, personalized training. Attracting new members with unbeatable value.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Services & Membership Plans</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Weight Training</h3>
+                        <p>Full free weights & machines area.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Cardio Zone</h3>
+                        <p>Treadmills, bikes, ellipticals.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Group Classes</h3>
+                        <p>Yoga, Zumba, HIIT sessions.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-tag"></i>
+                        <h3>Plans</h3>
+                        <ul>
+                            <li>Basic: $29/mo (24/7 access)</li>
+                            <li>Premium: $49/mo (+classes, trainer)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trainers" class="trainers">
+            <div class="container">
+                <h2 class="section-title">Our Expert Trainers</h2>
+                <div class="trainers-grid">
+                    <div class="trainer-card">
+                        <img src="t1.png" alt="Trainer 1">
+                        <h3>John Doe</h3>
+                        <p>Certified Strength Coach</p>
+                    </div>
+                    <div class="trainer-card">
+                        <img src="t2.jpg" alt="Trainer 2">
+                        <h3>Jane Smith</h3>
+                        <p>Yoga & Pilates Expert</p>
+                    </div>
+                    <div class="trainer-card">
+                        <img src="t3.jpeg" alt="Trainer 3">
+                        <h3>Mike Johnson</h3>
+                        <p>Cardio Specialist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <form id="inquiry-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Inquiry</button>
+                </form>
+                <div id="form-success" class="success-msg" style="display:none;">
+                    <i class="fas fa-check"></i> Thank you! We'll contact you soon.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 New Fitness Gym. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
